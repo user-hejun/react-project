@@ -2,18 +2,15 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 const CountView = (props: any) => {
-  const { count } = props.countReducer
-  console.log('props', props);
-
+  const { countReducer } = props
   return (
     <div>
-      { count }
+      { countReducer.count }
     </div>
   )
 }
 
 const mapStateToProps = (state: any) => {
-  console.log('state', state)
   return state
 }
 

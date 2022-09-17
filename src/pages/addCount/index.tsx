@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 const AddCount = (props: any) => {
   const handleClick = () => {
     const { sendAction } = props
-    console.log('props', props)
     sendAction({add: 2})
   }
   return (

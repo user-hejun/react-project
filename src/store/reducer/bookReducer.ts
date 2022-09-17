@@ -4,7 +4,6 @@ const initStae = {
 }
 
 const bookReducer = (state = initStae, action: any) => {
-  console.log('action', action, state)
   switch (action.type) {
     case BOOK_ADD:
       return {

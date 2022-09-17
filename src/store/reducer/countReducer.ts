@@ -7,7 +7,6 @@ interface Action {
   [key:string]: any
 }
 const CountReducer = (state = initStae, action: Action) => {
-  console.log('action', action);
   switch (action.type) {
     case 'COUNT_ADD': 
       return {
